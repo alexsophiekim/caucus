@@ -1,0 +1,832 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'variable';
+@import 'grid';
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+:target {
+  padding-top: 100px;
+  position: relative;
+}
+
+
+.landing{
+  .logo{
+    height: 8vh;
+    background-color: $blackColour;
+    color: $whiteColour;
+    text-align: center;
+    padding: 10px;
+    img{
+      display: none;
+      width: 100%;
+    }
+  }
+
+  .section{
+    height: 21vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a{
+      text-decoration-line: none;
+    }
+    h3{
+      color: $whiteColour;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 45px;
+      text-shadow:2px 2px $blackColour;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    i{
+      display: none;
+    }
+  }
+
+  .cafeSection{
+      background-image: url('../img/coffee.jpg');
+  }
+
+  .barSection{
+    background-image: url('../img/bar.jpg');
+
+  }
+
+  .roomSection{
+    background-image: url('../img/room-service-pink.jpg');
+  }
+
+  .restaurantSection{
+    background-image: url('../img/resta.jpg');
+  }
+
+  .tagLine{
+    height: 8vh;
+    background-color: $goldColour;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.headerBg{
+  background-color: $blackColour;
+  width:100%;
+  position: fixed;
+  top:0;
+  z-index: 2;
+}
+.header{
+  margin: 0 auto;
+  height:50px;
+  .textLogoMobile{
+    a{
+      text-decoration-line: none;
+    }
+    h1{
+      font-size: 30px;
+      text-align: center;
+      letter-spacing: 3px;
+    color: $whiteColour;
+    padding-top: 5px;
+  }
+}
+.billIcon{
+  a{
+    text-decoration-line: none;
+  }
+ }
+}
+
+.hamburgerNav, .billIcon{
+  height: 50px;
+  text-align: center;
+  padding: 10px 0;
+  i{
+    font-size: 30px;
+    color: $whiteColour;
+  }
+}
+
+
+////header///
+
+
+.hamburgerList{
+  z-index: 20;
+  display: none;
+  position: fixed;
+  top:50px;
+  ul{
+    li{
+      background-color: $goldColour;
+      padding: 10px;
+      a{
+        text-decoration-line: none;
+        .textNavList{
+          font-size: 25px;
+          font-weight: 300;
+          color: $whiteColour;
+          padding-left: 30px;
+        }
+        i{
+          display: none;
+        }
+      }
+    }
+    &::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+ }
+
+
+ .menuNav{
+   padding: 0 5px;
+   margin: 0 auto;
+   background-color: $goldColour;
+   height: 40px;
+   position: fixed;
+   top:50px;
+   z-index: 10;
+    ul{
+     display: flex;
+     justify-content: space-between;
+     margin: 0;
+     margin-top: 5px;
+     width: 100%;
+     li{
+       float: left;
+       list-style: none;
+       margin: auto;
+       a{
+         padding-top: 10px;
+         font-size: 25px;
+         font-weight: 300;
+         color: $whiteColour;
+         text-decoration-line: none;
+         &:active{
+           font-weight: bold;
+           text-shadow: 2px 2px 2px #000;
+         }
+       }
+     }
+     &::after{
+       content: '';
+       display: block;
+       clear: both;
+     }
+   }
+ } //menuNav end//
+
+ .notice{
+   width: 100%;
+   background-color: $whiteColour;
+   position: fixed;
+   justify-content: space-around;
+   top:90px;
+   display: flex;
+   z-index:3;
+   h5{
+     font-weight: 200;
+   }
+  }
+
+.pageContainer{
+  background-color: $whiteColour;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  padding: 10px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: center;
+  .logoText{
+    display: none;
+  }
+  h5{
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+  }
+  .billBox{
+    border-top: 2px dotted $blackColour;
+    border-bottom: 2px dotted $blackColour;
+    margin: 10px 0;
+    padding: 10px 0;
+    .itemLine{
+      margin: 8px 0;
+      p{
+        font-size: 20px;
+      }
+      .itemName{
+        text-align: left;
+      }
+    }
+  }
+  .total{
+    .subtotal, .subPrice{
+     font-family: 'Montserrat', sans-serif;
+     font-size: 17px;
+     font-weight: 400;
+    }
+    .subtotal{
+      h2{
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+    .subPrice{
+      h2{
+        text-align: right;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .btnGroup{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  .billBtn{
+  width: 200px;
+  background-color:$blackColour;
+  display:inline-block;
+  cursor:pointer;
+  color:$whiteColour;
+  ffont-family: 'Montserrat', sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  padding:5px 30px;
+  text-decoration:none;
+  a{
+    text-decoration-line:none;
+    color:$whiteColour;
+   }
+  }
+  }
+
+  .menuSort{
+    p{
+      color: $blackColour;
+      font-family: cursive;
+      font-size: 30px;
+    }
+  }
+  .menuInfo{
+    .selection{
+      display: none;
+    }
+    .menuTitle{
+      h2{
+        font-weight: 400;
+        padding-bottom: 10px;
+      }
+      h3{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+      }
+    }
+    .ingrediants{
+      padding-bottom: 10px;
+      padding-top: 5px;
+      h5{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+      }
+    }
+  }
+  i{
+    font-size: 30px;
+    margin-top: 15px;
+  }
+}
+
+.footer{
+  position: fixed;
+  bottom:0;
+  background-color: $goldColour;
+  height: 50px;
+  width: 100%;
+  h1{
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    color: $whiteColour;
+    padding-top: 5px;
+  }
+  h2{
+    color: $whiteColour;
+    float: left;
+    margin-top: 10px;
+  }
+  .leftBtn{
+    margin-left: 10px;
+  }
+  .rightBtn{
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+.callWaiter{
+  position: fixed;
+  bottom:0;
+  background-color: $goldColour;
+  height: 50px;
+  width: 100%;
+  h2{
+    text-align: center;
+    color: $whiteColour;
+    margin-top:5px;
+    font-size: 30px;
+    text-shadow: 1px 1px $blackColour;
+  }
+}
+
+.billBar{
+  display: none;
+}
+
+
+
+.billContainer{
+  background-color: $whiteColour;
+  padding: 10px;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  .logoText{
+    display: none;
+  }
+  h5{
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .billBox{
+    border-top: 1px dotted $blackColour;
+    border-bottom: 1px dotted $blackColour;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    .itemLine{
+      p{
+        font-size: 20px;
+        font-weight: 400;
+        margin:5px 0;
+      }
+      .itemName{
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+  } ///bill box end///
+  .total{
+    h2{
+      font-weight: 600;
+    }
+    .left{
+      float: left;
+      padding: 10px;
+    }
+    .right{
+      float: right;
+      padding: 10px;
+    }
+  }
+  .btnGroup{
+    display: flex;
+    .billBtn{
+      flex-wrap: wrap;
+      width: 200px;
+      background-color: $blackColour;
+      display: inline-block;
+      font-family: 'Montserrat',sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 10px;
+      a{
+        text-decoration-line: none;
+        color: $whiteColour;
+      }
+    }
+  }
+  .borderline{
+    border-top: 1px dotted $blackColour;
+    border-bottom: 1px dotted $blackColour;
+  }
+  .totalBox{
+    padding: 10px 0;
+    .left{
+      text-align: left;
+      margin-left: 10px;
+    }
+    .right{
+      text-align: right;
+      margin-right: 10px;
+    }
+  }
+
+  .payMethodBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:15px;
+    margin-bottom: 50px;
+    .methodBtn{
+      background: linear-gradient($goldColour, #deb887 , $goldColour );
+      border-radius: 10px;
+      width: 250px;
+      height:60px;
+      margin:10px 0;
+      padding-top: 15px;
+      a{
+        text-decoration-line:none;
+        color: $whiteColour;
+        font-size: 25px;
+        font-weight: 400;
+        font-family:'Montserrat',sans-serif;
+        text-transform: uppercase;
+        text-shadow: 2px 1px grey;
+      }
+    &:active{
+      box-shadow: 2px 2px grey;
+    }
+   }
+  }
+
+
+
+}  ////////billContainer end////
+
+// #payWay{
+//   position: absolute;
+//   top: 250px;
+//   left: 50%;
+//   transform: rotateX(-50%);
+//   .popupPay{
+//     background-color: $blackColour;
+//     width: 300px;
+//     height: 150px;
+//     // display: flex;
+//     .split{
+//       a{
+//         text-decoration-line: none;
+//         input{
+//           margin-top: 10px;
+//           margin-left: 30px;
+//           background-color: $goldColour;
+//           width: 130px;
+//           height: 40px;
+//           color: $blackColour;
+//           padding-top: 5px;
+//           font-size: 25px;
+//           font-weight: bold;
+//           text-align: center;
+//         }
+//       }
+//     }
+//     .all{
+//       input{
+//         margin-top: 10px;
+//         margin-left: 30px;
+//         background-color: $goldColour;
+//         width: 130px;
+//         height: 40px;
+//         color: $blackColour;
+//         padding-top: 5px;
+//         font-size: 25px;
+//         font-weight: bold;
+//         text-align: center;
+//       }
+//     }
+//   }
+// }
+
+#tipBox{
+  display: none;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  .popupTip{
+    background-color: $blackColour;
+    width: 300px;
+    height: 150px;
+    p{
+      font-size: 30px;
+      padding-top: 20px;
+      color: $whiteColour;
+      text-align: center;
+    }
+    .dollar{
+      margin-top: 10px;
+      display: flex;
+      input{
+        height: 40px;
+        width: 150px;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .addBtn{
+        margin-left: 30px;
+        background-color: $goldColour;
+        width: 70px;
+        height: 40px;
+        color: $blackColour;
+        padding-top: 5px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.item{
+  position: relative;
+  .popup {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,.40);
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    i{
+      color: $goldColour;
+    }
+    @media screen and (min-width: $mdWidth) {
+      display: none !important;
+    }
+  }
+  .weird {
+    height: 60%;
+  }
+
+}
+
+
+
+
+
+//////////////////////////////////   /Narrow Tablet Version/  //////////////////
+@media screen and (min-width: $mdWidth){
+  body{
+    background-image: url('../img/bg.jpg')
+  }
+
+  .landing{
+    max-width: 700px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .center{
+      width: 80%;
+      margin: auto;
+    }
+    .logo{
+      height: auto;
+      padding: 0;
+      h1{
+        display: none;
+      }
+      img{
+        display: block;
+      }
+    }
+
+    .icons{
+      padding-left: 5px;
+      .col{
+        padding: 5px;
+        // padding-left: 10px;
+        // padding-bottom: 10px;
+       .section{
+         border-radius: 10px;
+         i{
+          font-size: 100px;
+          color: $whiteColour;
+         }
+        }
+      }
+    }
+
+    .section:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+    .section{
+      height: auto;
+      width: 100%;
+      background-image: none !important;
+      background-color: $goldColour;
+      justify-content: center;
+      h3{
+        display: none;
+      }
+      i{
+        display: block;
+      }
+    }
+
+    .tagLine{
+      display: none;
+    }
+  }
+
+.header{
+  display: none;
+}
+
+
+.hamburgerList{
+  width: 100px;
+  height: 100%;
+  top:0;
+  @include clear;
+  ul{
+    height: 100%;
+    li{
+      background-color: $blackColour;
+      height: $iconHeight;
+      list-style: none;
+      a{
+        i{
+          display: block;
+          color: $whiteColour;
+          font-size: 65px;
+          text-align: center;
+          padding-top: 50px;
+        }
+      }
+    }
+  }
+  .textNavList{
+    display: none;
+  }
+}
+.menuNav{
+  top:0;
+  margin-left: 100px;
+}
+.notice{
+  width: 75%;
+  left: 100px;
+  top:40px;
+}
+
+  .footer{
+    width: 75%;
+    margin-left: 100px;
+    height: 40px;
+  }
+
+  .billBar{
+    width: 100px;
+    display: block;
+    height: 100%;
+    background-color: $goldColour;
+    position:fixed;
+    right:0;
+    top:0;
+    z-index: 4;
+    a{
+      text-decoration-line: none;
+      h2, i{
+        color: $whiteColour;
+        width:100vh;
+        transform-origin: left;
+        // transform: translate(50px,50vh) rotate(90deg);
+        margin-top: -50%;
+      }
+      h2{
+        font-family: cursive;
+        font-size: 30px;
+        transform: translate(50px,45vh) rotate(90deg);
+      }
+      i{
+        font-size: 50px;
+        transform: translate(50px,35vh) rotate(90deg);
+      }
+    }
+  }
+
+/////////layout.html//////
+
+.pageContainer{
+  margin-top: 50px;
+  margin-left: 100px;
+  height: 100vh;
+  max-width: 75%;
+  h3{
+    font-size: 25px;
+  }
+  i{
+    display: inline;
+    font-size: 25px;
+    color: $goldColour;
+    float: right;
+    padding:0 5px;
+  }
+  .menuInfo{
+    .selection{
+      display: block;
+    }
+  }
+ }   ////pageContainer ending////////
+
+
+.billContainer{
+  margin-left: 100px;
+  height: 100vh;
+  max-width: 75%;
+  padding:0 40px;
+  .logoText{
+    display: block;
+    padding-top: 100px;
+    color: $blackColour;
+  }
+  .billBox{
+    .itemLine{
+      p{
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
+  }
+
+
+
+}   /////billContainer end/////
+
+
+
+#tipBox{
+  top:420px;
+}
+
+ .callWaiter{
+   display: none;
+ }
+
+}/////////tablet version end///
+
+@media screen and (min-width: $lgWidth){
+  .landing{
+    max-width: 930px;
+  }
+  .menuNav, .footer, .pageContainer{
+    margin-left: 120px;
+  }
+  .notice{
+    left: 120px;
+  }
+
+  .hamburgerList{
+    ul{
+      li{
+        a{
+          i{
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+}   ////////////////Wide Tablet End//////

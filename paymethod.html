@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Caucus Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="header headerBg">
+     <div class="col col12">
+      <div class="hamburgerNav col col2" id="menuIcon" >
+       <i class="fas fa-bars"></i>
+      </div>
+     <div class="textLogoMobile col col8">
+       <a href="index.html"><h1>CAUCUS</h1></a>
+     </div>
+     <div class="billIcon col col2">
+       <a href="edit.html"><i  class="fas fa-file-invoice-dollar"></i></a>
+     </div>
+     </div>
+    </div>
+
+     <div class="hamburgerList">
+       <ul>
+         <li class="col col12"> <a href="index.html">
+           <div class="animated slideInLeft textNavList">HOME
+             </div><i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="col col12"> <a href="#">
+          <div class="animated slideInLeft textNavList">CAFE
+          </div><i class="fas fa-coffee navIcon"></i>
+         </a>
+       </li>
+       <li class="col col12"> <a href="#">
+         <div class="animated slideInLeft textNavList">BAR
+         </div><i class="fas fa-wine-glass-alt navIcon"></i>
+        </a>
+      </li>
+      <li class="col col12"> <a href="#">
+        <div class="animated slideInLeft textNavList">ROOM SERVICE
+        </div><i class="fas fa-concierge-bell navIcon"></i>
+       </a>
+     </li>
+     <li class="col col12"> <a href="restaurant.html">
+       <div class="animated slideInLeft textNavList">RESTAURANT
+       </div><i class="fas fa-utensils navIcon"></i>
+      </a>
+      </li>
+      <li class="col col12"> <a href="#">
+        <div class="animated slideInLeft textNavList">CALL WAITER
+        </div><i class="fas fa-bell navIcon"></i>
+       </a>
+       </li>
+     </ul>
+    </div>
+
+
+    <div class="billContainer">
+      <div class="row">
+        <div class="col col12">
+         <h1 class="logoText">CAUCUS</h1>
+         <br>
+         <br>
+         <h5>Invoice no.101  Table No.12 Guest:2  Server: Rosa Jane </h5>
+        </div>
+      </div> <!--row-->
+      <div class="row">
+        <div class="col col12 totalBox borderline">
+          <div class="col col6">
+            <h2 class="left">Total</h2>
+          </div>
+          <div class="col col6">
+            <h2 class="right">$145.00</h2>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="payMethodBtn">
+        <div class="methodBtn 1">
+          <a href="#">Debit Card</a>
+        </div>
+        <div class="methodBtn 2">
+          <a href="#">Credit Card</a>
+        </div>
+        <div class="methodBtn 3">
+          <a href="#">Cash</a>
+        </div>
+        <div class="methodBtn 4">
+          <a href="#">Other</a>
+        </div>
+      </div>
+
+   <div class="col col12 btnGroup">
+    <button class="billBtn"><a href="restaurant.html">MENU</a></button>
+    <button class="billBtn tipBtn"><a href="#tipBox">TIP</a></button>
+    <button class="billBtn payBtn"><a href="paymethod.html">PAY NOW</a></button>
+   </div>
+
+    </div>
+  </div>    <!--billContainer end-->
+  <!-- <div id="payWay">
+    <div class="popupPay">
+      <div class="split">
+        <a href="split.html">
+        <input id="splitPay" type="button" name="pay" value="SPLIT" />
+        </a>
+      </div>
+      <div class="all">
+        <input id="allPay" type="button" name="pay" value="ALL" />
+      </div>
+    </div> -->
+
+  <div id="tipBox">
+    <div class="popupTip">
+      <p>Thank you!</p>
+      <div class="dollar">
+        <input type = "number" placeholder="$" name = "HPR" min="1" step="0.01" />
+         <div class="addBtn">ADD</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="billBar"><a href="edit.html">
+      <h2 class="vertical-text">your bill here</h2>
+      <i  class="fas fa-file-invoice-dollar"></i></a>
+    </div>
+
+
+
+    <div class="callWaiter col colS12">
+      <h2>Call Waiter</h2>
+    </div>
+
+
+   <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>

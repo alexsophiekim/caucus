@@ -1,0 +1,39 @@
+$lgWidth:1000px;
+$mdWidth:710px;
+
+$columns:12;
+$columnWidth:100% / $columns;
+
+$goldColour: #ad974f;
+$blackColour: #231f20;
+$whiteColour: #eaeaea;
+
+$iconHeight:100% / 6;
+
+@mixin clear{
+  display: block;
+  content:'';
+  clear: both;
+}
+
+@mixin rotate{
+  transform: rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+}
+
+.row{
+  width: 100%;
+  &:after{
+  @include clear;
+  }
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}

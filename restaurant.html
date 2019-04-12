@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Caucus Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- <div id="popup" class="popupBox">
+      <i class="fas fa-plus-circle addBtn"></i>
+      <i class="fas fa-minus-circle removeBtn"></i>
+    </div> -->
+
+
+   <div class="header headerBg">
+    <div class="col col12">
+     <div class="hamburgerNav col col2" id="menuIcon" >
+      <i class="fas fa-bars"></i>
+     </div>
+    <div class="textLogoMobile col col8">
+      <a href="index.html"><h1>CAUCUS</h1></a>
+    </div>
+    <div class="billIcon col col2">
+      <a href="edit.html"><i  class="fas fa-file-invoice-dollar"></i></a>
+    </div>
+    </div>
+   </div>
+
+    <div class="hamburgerList">
+      <ul>
+        <li class="col col12"> <a href="index.html">
+          <div class="animated slideInLeft textNavList">HOME
+            </div><i class="fas fa-home"></i>
+         </a>
+       </li>
+       <li class="col col12"> <a href="#">
+         <div class="animated slideInLeft textNavList">CAFE
+         </div><i class="fas fa-coffee navIcon"></i>
+        </a>
+      </li>
+      <li class="col col12"> <a href="#">
+        <div class="animated slideInLeft textNavList">BAR
+        </div><i class="fas fa-wine-glass-alt navIcon"></i>
+       </a>
+     </li>
+     <li class="col col12"> <a href="#">
+       <div class="animated slideInLeft textNavList">ROOM SERVICE
+       </div><i class="fas fa-concierge-bell navIcon"></i>
+      </a>
+    </li>
+    <li class="col col12"> <a href="restaurant.html">
+      <div class="animated slideInLeft textNavList">RESTAURANT
+      </div><i class="fas fa-utensils navIcon"></i>
+     </a>
+     </li>
+     <li class="col col12"> <a href="#">
+       <div class="animated slideInLeft textNavList">CALL WAITER
+       </div><i class="fas fa-bell navIcon"></i>
+      </a>
+      </li>
+    </ul>
+   </div>
+
+   <div class="col col12 colM9 menuNav">
+     <ul class="fixedNav">
+       <li> <a href="#entree">Entree</a> </li>
+       <li> <a href="#main">Main</a> </li>
+       <li> <a href="#">Dessert</a> </li>
+       <li> <a href="#">Side</a> </li>
+     </ul>
+    </div>
+ <!-- //menuNav// -->
+   <div class="notice col colM9">
+     <h5>GF: Gluten free</h5>
+     <h5>N: Contains nut</h5>
+     <h5>DF: Dairy free</h5>
+     <h5>V: Vegetarian</h5>
+   </div>
+   <div class="pageContainer">
+
+
+      <!-- menu title, price and selection -->
+     <div class="row">
+     <div class="menuInfo col col12">
+       <!-- 1st line menu -->
+       <div id="entree">
+         <div class="col col12 menuSort">
+           <p>Entree</p>
+         </div>
+         <div class="item">
+           <div class="popup weird">
+             <i class="fas fa-plus-circle addBtn"></i>
+             <i class="fas fa-minus-circle removeBtn"></i>
+           </div>
+           <div class="menuTitle">
+             <h3 class="col col10 colM8 foodName">Bread and Dip</h3><h3 class="col col1 price">$12</h3>
+           </div>
+           <div class="selection col colM2">
+            <div class="btn right">
+              <i class="fas fa-plus-circle addBtn"></i>
+              <i class="fas fa-minus-circle removeBtn"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col10 colM8 ingrediants">
+              <h5>artisan bread widh olive oil and selection of dips</h5>
+            </div>
+          </div>
+        </div>
+       <!-- 1st line menu ending -->
+
+       <!-- 2nd line menu -->
+       <div class="item">
+         <div class="popup">
+           <i class="fas fa-plus-circle addBtn"></i>
+           <i class="fas fa-minus-circle removeBtn"></i>
+         </div>
+          <div class="menuTitle">
+            <h3 class="col col9 colM7 foodName">Salmon gravlax  <h6 class="col col1">GF</h6></h3>
+            <h3 class="col col1 price">$14</h3>
+          </div>
+          <div class="selection col colM2">
+            <div class="btn right">
+              <i class="fas fa-plus-circle addBtn"></i>
+              <i class="fas fa-minus-circle removeBtn"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col colM8 col10 ingrediants">
+              <h5>capers, horseradish cream, pickled cucumber, alfalfa salad</h5>
+            </div>
+          </div>
+        </div>
+       <!-- 2nd line menu ending -->
+
+
+       <!-- 3rd line menu -->
+       <div class="item">
+         <div class="popup">
+           <i class="fas fa-plus-circle addBtn"></i>
+           <i class="fas fa-minus-circle removeBtn"></i>
+         </div>
+        <div class="menuTitle">
+          <h3 class="col col9 colM7 foodName">Oriental chicken karaage<h6 class="col col1">GF</h6></h3>
+          <h3 class="col col1 price">$13</h3>
+       </div>
+       <div class="selection col colM2">
+         <div class="btn right">
+            <i class="fas fa-plus-circle addBtn"></i>
+            <i class="fas fa-minus-circle removeBtn"></i>
+          </div>
+       </div>
+        <div class="row">
+          <div class="col col10 colM8 ingrediants">
+            <h5>sauteed, mung bean sprout, oriental fried chicken thigh balls, edamame, Japanese mayo</h5>
+          </div>
+        </div>
+      </div>
+       <!-- 3rd line menu ending -->
+
+       <!-- 4th line menu -->
+       <div class="item">
+         <div class="popup">
+           <i class="fas fa-plus-circle addBtn"></i>
+           <i class="fas fa-minus-circle removeBtn"></i>
+         </div>
+        <div class="menuTitle">
+          <h3 class="col col9 colM7 foodName">Truffle goat cheese crostini<h6 class="col col1">V N</h6></h3>
+          <h3 class="col col1 price">$14</h3>
+       </div>
+       <div class="selection col colM2">
+         <div class="btn right">
+            <i class="fas fa-plus-circle addBtn"></i>
+            <i class="fas fa-minus-circle removeBtn"></i>
+          </div>
+       </div>
+        <div class="row">
+          <div class="col col10 ingrediants">
+            <h5>coriander, spiced beetroot, truffle paste, roast pistachio and grapes</h5>
+          </div>
+        </div>
+      </div>
+       <!-- 4th line menu ending -->
+
+        <!-- 5th line menu -->
+        <div class="item">
+          <div class="popup">
+            <i class="fas fa-plus-circle addBtn"></i>
+            <i class="fas fa-minus-circle removeBtn"></i>
+          </div>
+         <div class="menuTitle">
+           <h3 class="col col9 colM7 foodName">Fried calamari rocket salad<h6 class="col col1">N GF</h6></h3>
+           <h3 class="col col1 price">$13</h3>
+        </div>
+        <div class="selection col colM2">
+          <div class="btn right">
+             <i class="fas fa-plus-circle addBtn"></i>
+             <i class="fas fa-minus-circle removeBtn"></i>
+           </div>
+        </div>
+         <div class="row">
+           <div class="col col10 colM8 ingrediants">
+             <h5>fried calamari, picked red cabbage, rocket, roasted cashews, YUZU dressing, with chipotle sause</h5>
+           </div>
+         </div>
+        </div
+        <!-- 5th line menu ending -->
+
+        <!-- 6th line menu -->
+        <div class="item">
+          <div class="popup">
+            <i class="fas fa-plus-circle addBtn"></i>
+            <i class="fas fa-minus-circle removeBtn"></i>
+          </div>
+         <div class="menuTitle">
+           <h3 class="col col10 colM8 foodName">BBQ pork rib pot pie</h3>
+           <h3 class="col col1 price">$13</h3>
+        </div>
+        <div class="selection col colM2">
+          <div class="btn right">
+             <i class="fas fa-plus-circle addBtn"></i>
+             <i class="fas fa-minus-circle removeBtn"></i>
+           </div>
+        </div>
+         <div class="row">
+           <div class="col col10 colM8 ingrediants">
+             <h5>bourbon bbq sause with pulled and braised pork rib, served with beer battered babt gherkin, whole grain mustard and roast bell pepper</h5>
+           </div>
+         </div>
+       </div>
+     </div>
+      <!-- 6th line menu ending -->
+      <br><br>
+
+      <div id="main">
+        <div class="row">
+          <div class="col col12 menuSort">
+            <p>Main</p>
+          </div>
+        </div> <!--menuSort: Main-->
+
+
+
+      <!-- menu title, price and selection -->
+     <div class="row">
+     <div class="menuInfo col col12">
+       <!-- 1st line menu -->
+       <div class="item">
+         <div class="popup">
+           <i class="fas fa-plus-circle addBtn"></i>
+           <i class="fas fa-minus-circle removeBtn"></i>
+         </div>
+        <div class="menuTitle">
+          <h3 class="col col9 colM7 foodName">Line caught fish<h6 class="col col1">N</h6></h3>
+          <h3 class="col col1 price">$34</h3>
+       </div>
+       <div class="selection col colM2">
+        <div class="btn right">
+            <i class="fas fa-plus-circle addBtn"></i>
+            <i class="fas fa-minus-circle removeBtn"></i>
+       </div>
+      </div>
+        <div class="row">
+          <div class="col col10 colM8 ingrediants">
+            <h5>shrimp pompom, buttered flat bean, cloudy bay clam, seaweed vinaigrette salad, poached macadamia, spinach and parmesan pesto</h5>
+          </div>
+        </div>
+      </div>
+     <!-- 1st line menu ending -->
+
+     <!-- 2nd line menu -->
+     <div class="item">
+       <div class="popup">
+         <i class="fas fa-plus-circle addBtn"></i>
+         <i class="fas fa-minus-circle removeBtn"></i>
+       </div>
+      <div class="menuTitle">
+        <h3 class="col col9 colM7 foodName">Prosciutto wrapped chicken breast  <h6 class="col col1">GF N</h6></h3>
+        <h3 class="col col1 price">$33</h3>
+     </div>
+     <div class="selection col colM2">
+      <div class="btn right">
+          <i class="fas fa-plus-circle addBtn"></i>
+          <i class="fas fa-minus-circle removeBtn"></i>
+     </div>
+     </div>
+      <div class="row">
+        <div class="col col10 colM8 ingrediants">
+          <h5>spinach, baked ricotta, pumpkin and chorizo filled chicken breast, creamy potato gnocchi, broccolini, pine nuts and red wine jus</h5>
+        </div>
+      </div>
+    </div>
+
+     <!-- 2nd line menu ending -->
+
+      <br>
+     <!-- steaks line menu -->
+      <h2>Caucus Grill</h2>
+      <div class="item">
+        <div class="popup">
+          <i class="fas fa-plus-circle addBtn"></i>
+          <i class="fas fa-minus-circle removeBtn"></i>
+        </div>
+       <div class="menuTitle">
+         <h3 class="col col10 colM8 foodName">OP Rib 450g</h3>
+         <h3 class="col col1 price">$46</h3>
+      </div>
+      <div class="selection col colM2">
+        <div class="btn right">
+           <i class="fas fa-plus-circle addBtn"></i>
+           <i class="fas fa-minus-circle removeBtn"></i>
+         </div>
+      </div>
+       <div class="row">
+         <div class="col col10 colM8 ingrediants">
+           <h5>carrot and ginger puree, potato gratin, baby carrots, black garlic puree, braised beef cheek vol au vent and vine tomato</h5>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="popup">
+         <i class="fas fa-plus-circle addBtn"></i>
+         <i class="fas fa-minus-circle removeBtn"></i>
+       </div>
+      <div class="menuTitle">
+        <h3 class="col col10 colM8 foodName">Rib Eye 200g</h3>
+        <h3 class="col col1 price">$36</h3>
+     </div>
+     <div class="selection col colM2">
+       <div class="btn right">
+          <i class="fas fa-plus-circle addBtn"></i>
+          <i class="fas fa-minus-circle removeBtn"></i>
+        </div>
+     </div>
+      <div class="row">
+        <div class="col col10 colM8 ingrediants">
+          <h5>carrot and ginger puree, potato gratin, baby carrots, black garlic puree, braised beef cheek vol au vent and vine tomato</h5>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="item">
+      <div class="popup">
+        <i class="fas fa-plus-circle addBtn"></i>
+        <i class="fas fa-minus-circle removeBtn"></i>
+      </div>
+     <div class="menuTitle">
+       <h3 class="col col10 colM8 foodName">Eye Fillet 180g</h3>
+       <h3 class="col col1 price">$38</h3>
+    </div>
+    <div class="selection col colM2">
+      <div class="btn right">
+         <i class="fas fa-plus-circle addBtn"></i>
+         <i class="fas fa-minus-circle removeBtn"></i>
+       </div>
+    </div>
+     <div class="row">
+       <div class="col col10 colM8 ingrediants">
+         <h5>carrot and ginger puree, potato gratin, baby carrots, black garlic puree, braised beef cheek vol au vent and vine tomato</h5>
+       </div>
+     </div>
+    </div>
+
+
+     <!-- steaks line menu ending-->
+     <br>
+     <!-- 4th line menu -->
+     <div class="item">
+       <div class="popup">
+         <i class="fas fa-plus-circle addBtn"></i>
+         <i class="fas fa-minus-circle removeBtn"></i>
+       </div>
+      <div class="menuTitle">
+        <h3 class="col col9 colM7 foodName">Beef short rib<h6 class="col col1">GF</h6></h3>
+        <h3 class="col col1 price">$38</h3>
+     </div>
+     <div class="selection col colM2">
+       <div class="btn right">
+          <i class="fas fa-plus-circle addBtn"></i>
+          <i class="fas fa-minus-circle removeBtn"></i>
+        </div>
+     </div>
+      <div class="row">
+        <div class="col col8 ingrediants">
+          <h5>8hour braised beef short rib, confit garlic, green beans, creamy mash potato and served with red wine jus</h5>
+        </div>
+      </div>
+    </div>
+     <!-- 4th line menu ending -->
+
+      <!-- 5th line menu -->
+      <div class="item">
+        <div class="popup">
+          <i class="fas fa-plus-circle addBtn"></i>
+          <i class="fas fa-minus-circle removeBtn"></i>
+        </div>
+       <div class="menuTitle">
+         <h3 class="col col10 colM8 foodName">Lamb rump</h3>
+         <h3 class="col col1 price">$35</h3>
+      </div>
+      <div class="selection col colM2">
+        <div class="btn right">
+           <i class="fas fa-plus-circle addBtn"></i>
+           <i class="fas fa-minus-circle removeBtn"></i>
+         </div>
+      </div>
+       <div class="row">
+         <div class="col col10 colM8 ingrediants">
+           <h5>pomegranate glazed orecchiette, creamy kumara puree, red wine poached cherry, grilled courgette, served with minted red wine jus</h5>
+         </div>
+       </div>
+     </div>
+      <!-- 5th line menu ending -->
+
+      <!-- 6th line menu -->
+      <div class="item">
+        <div class="popup">
+          <i class="fas fa-plus-circle addBtn"></i>
+          <i class="fas fa-minus-circle removeBtn"></i>
+        </div>
+       <div class="menuTitle">
+         <h3 class="col col10 colM8 foodName">Crumbed ratatouille</h3>
+         <h3 class="col col1 price">$29</h3>
+      </div>
+      <div class="selection col colM2">
+        <div class="btn right">
+           <i class="fas fa-plus-circle addBtn"></i>
+           <i class="fas fa-minus-circle removeBtn"></i>
+         </div>
+      </div>
+       <div class="row">
+         <div class="col col10 colM8 ingrediants">
+           <h5>beetroot creme fraiche, parmesan crisp, poached pear and fig jam, orange polenta chip and cheesy garlic bread</h5>
+         </div>
+       </div>
+     </div>
+
+           <br><br>
+        <br><br><br><br><br>
+
+    </div>     <!--main menuSort div end-->
+      <!-- 6th line menu ending -->
+
+
+    </div>
+    </div>
+  </div><!--menuInfo-->
+  </div> <!--row-->
+   </div>
+
+   <div class="billBar"><a href="edit.html">
+     <h2 class="vertical-text">your bill here</h2>
+     <i  class="fas fa-file-invoice-dollar"></i></a>
+   </div>
+
+
+
+   <div class="footer col colS12">
+     <a href="edit.html">
+     <h2 class="footerBtn leftBtn">EDIT</h2>
+    </a>
+     <a href="edit.html">
+     <h2 class="footerBtn rightBtn">DONE</h2>
+     </a>
+   </div>
+
+
+
+   <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>
