@@ -138,13 +138,13 @@
      </div>
     </div>
     <div class="col col12 itemLine">
-    <div class="col col2 qty">
+    <div class="col col2 qty lastqt">
       <p>2</p>
     </div>
-    <div class="col col7 itemName">
+    <div class="col col7 itemName lastnm">
       <p>Glass of wine</p>
     </div>
-    <div class="col col3 price">
+    <div class="col col3 price lastpr">
       <p>$ 9.00</p>
     </div>
     </div>
@@ -161,13 +161,13 @@
   </div>  <!--total-->
   <div class="col col12 btnGroup">
    <button class="billBtn"><a href="restaurant.html">MENU</a></button>
-   <button class="billBtn tipBtn"><a href="#tipBox">TIP</a></button>
-   <button class="billBtn payBtn"><a href="paymethod.html">PAY NOW</a></button>
+   <button class="billBtn tipBtn" id="tip"><a href="#tipBox">TIP</a></button>
+   <button class="billBtn payBtn" id="pay"><a href="#payWay">PAY NOW</a></button>
   </div>
 
    </div>
  </div>    <!--billContainer end-->
- <!-- <div id="payWay">
+ <div id="payWay">
    <div class="popupPay">
      <div class="split">
        <a href="split.html">
@@ -177,18 +177,18 @@
      <div class="all">
        <input id="allPay" type="button" name="pay" value="ALL" />
      </div>
-   </div> -->
+   </div>
+ </div>
 
  <div id="tipBox">
    <div class="popupTip">
      <p>Thank you!</p>
      <div class="dollar">
-       <input type = "number" placeholder="$" name = "HPR" min="1" step="0.01" />
+       <input type = "number" placeholder="$5.00" name = "HPR" min="1" step="0.01" />
         <div class="addBtn">ADD</div>
      </div>
    </div>
  </div>
-
 
 
 

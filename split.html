@@ -65,6 +65,7 @@
          <h1 class="logoText">CAUCUS</h1>
          <br>
          <br>
+         <h5>Select what do you want to pay</h5>
          <h5>Invoice no.101  Table No.12 Guest:2  Server: Rosa Jane </h5>
         </div>
       </div> <!--row-->
@@ -77,8 +78,11 @@
           <div class="col col7 itemName">
             <p>Calamari Salad</p>
           </div>
-          <div class="col col3 price">
+          <div class="col col2 price">
             <p>$13.00</p>
+          </div>
+          <div class="col col1 tickbox">
+            <input type="checkbox">
           </div>
          </div>
          <div class="col col12 itemLine">
@@ -88,8 +92,11 @@
           <div class="col col7 itemName">
             <p>Salmon gravlax</p>
           </div>
-          <div class="col col3 price">
+          <div class="col col2 price">
             <p>$14.00</p>
+          </div>
+          <div class="col col1 tickbox">
+            <input type="checkbox">
           </div>
         </div>
         <div class="col col12 itemLine">
@@ -99,8 +106,11 @@
          <div class="col col7 itemName">
            <p>Rib eye 200g</p>
          </div>
-         <div class="col col3 price">
+         <div class="col col2 price">
            <p>$36.00</p>
+         </div>
+         <div class="col col1 tickbox">
+           <input type="checkbox">
          </div>
        </div>
        <div class="col col12 itemLine">
@@ -110,8 +120,11 @@
         <div class="col col7 itemName">
           <p>Eye fillet 180g</p>
         </div>
-        <div class="col col3 price">
+        <div class="col col2 price">
           <p>$38.00</p>
+        </div>
+        <div class="col col1 tickbox">
+          <input type="checkbox">
         </div>
       </div>
       <div class="col col12 itemLine">
@@ -121,8 +134,11 @@
        <div class="col col7 itemName">
          <p>Frozen delight</p>
        </div>
-       <div class="col col3 price">
+       <div class="col col2 price">
          <p>$12.00</p>
+       </div>
+       <div class="col col1 tickbox">
+        <input type="checkbox">
        </div>
      </div>
      <div class="col col12 itemLine">
@@ -132,8 +148,11 @@
       <div class="col col7 itemName">
         <p>Chocolate Tart</p>
       </div>
-      <div class="col col3 price">
+      <div class="col col2 price">
         <p>$14.00</p>
+      </div>
+      <div class="col col1 tickbox">
+        <input type="checkbox">
       </div>
      </div>
      <div class="col col12 itemLine">
@@ -143,26 +162,39 @@
      <div class="col col7 itemName lastnm">
        <p>Glass of wine</p>
      </div>
-     <div class="col col3 price lastpr">
+     <div class="col col2 price lastpr">
        <p>$ 9.00</p>
+     </div>
+     <div class="col col1 tickbox lasttc">
+       <input type="checkbox">
      </div>
      </div>
     </div> <!--billBox end-->
    </div><!--billbox row-->
 
-   <div class="col col12 total">
+   <div class="col col12 splitTotal">
      <div class="col col6">
-       <h2 class="left">SUBTOTAL</h2>
+       <h2 class="left">selected</h2>
      </div>
      <div class="col col6">
-       <h2 class="right">$145.00</h2>
+       <h2 class="right">$70.00</h2>
+     </div>
+   </div>  <!--total-->
+
+   <div class="col col12 splitTotal">
+     <div class="col col6">
+       <h2 class="left">remained</h2>
+     </div>
+     <div class="col col6">
+       <h2 class="right">$80.00</h2>
      </div>
    </div>  <!--total-->
    <div class="col col12 btnGroup">
     <button class="billBtn"><a href="restaurant.html">MENU</a></button>
-    <button class="billBtn tipBtn"><a href="#tipBox">TIP</a></button>
-    <button class="billBtn payBtn"><a href="#payWay">PAY NOW</a></button>
+    <button class="billBtn tipBtn" id="tip"><a href="#tipBox">TIP</a></button>
+    <button class="billBtn payBtn"><a href="paymethod.html">PAY NOW</a></button>
    </div>
+
 
     </div>
   </div>    <!--billContainer end-->
