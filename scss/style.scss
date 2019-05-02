@@ -499,12 +499,17 @@ body{
 }  ////////billContainer end////
 
 #payWay{
+
   display: none;
   position: absolute;
   top: 250px;
   left: 15%;
   transform: rotateX(-50%);
   width: 100px;
+  @media screen and (min-width: $mdWidth) {
+    top:400px;
+    left:45%;
+  }
   .popupPay{
     background-color: $blackColour;
     width: 300px;
@@ -787,6 +792,7 @@ body{
 
 
 .billContainer{
+  overflow-y: scroll;
   margin-left: 100px;
   height: 100vh;
   max-width: 75%;
@@ -804,15 +810,14 @@ body{
       }
     }
   }
-
-
-
 }   /////billContainer end/////
 
-
-
 #tipBox{
-  top:420px;
+  top:400px;
+}
+#payWay{
+  top:400px;
+  left: 45%;
 }
 
  .callWaiter{
@@ -844,7 +849,10 @@ body{
     }
   }
 
-
+#payWay{
+  top:400px;
+  left:50%;
+}
 
 
 

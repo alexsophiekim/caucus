@@ -763,15 +763,20 @@ body {
   left: 15%;
   transform: rotateX(-50%);
   width: 100px; }
-  /* line 508, ../scss/style.scss */
+  @media screen and (min-width: 710px) {
+    /* line 501, ../scss/style.scss */
+    #payWay {
+      top: 400px;
+      left: 45%; } }
+  /* line 513, ../scss/style.scss */
   #payWay .popupPay {
     background-color: #231f20;
     width: 300px;
     height: 150px; }
-    /* line 514, ../scss/style.scss */
+    /* line 519, ../scss/style.scss */
     #payWay .popupPay .split a {
       text-decoration-line: none; }
-      /* line 516, ../scss/style.scss */
+      /* line 521, ../scss/style.scss */
       #payWay .popupPay .split a input {
         margin-top: 20px;
         margin-left: 50px;
@@ -783,7 +788,7 @@ body {
         font-size: 25px;
         font-weight: bold;
         text-align: center; }
-    /* line 531, ../scss/style.scss */
+    /* line 536, ../scss/style.scss */
     #payWay .popupPay .all input {
       margin-top: 10px;
       margin-bottom: 15px;
@@ -797,36 +802,36 @@ body {
       font-weight: bold;
       text-align: center; }
 
-/* line 548, ../scss/style.scss */
+/* line 553, ../scss/style.scss */
 #tipBox {
   display: none;
   position: absolute;
   top: 250px;
   left: 50%;
   transform: translateX(-50%); }
-  /* line 554, ../scss/style.scss */
+  /* line 559, ../scss/style.scss */
   #tipBox .popupTip {
     background-color: #231f20;
     width: 300px;
     height: 150px; }
-    /* line 558, ../scss/style.scss */
+    /* line 563, ../scss/style.scss */
     #tipBox .popupTip p {
       font-size: 30px;
       padding-top: 20px;
       color: #eaeaea;
       text-align: center; }
-    /* line 564, ../scss/style.scss */
+    /* line 569, ../scss/style.scss */
     #tipBox .popupTip .dollar {
       margin-top: 10px;
       display: flex; }
-      /* line 567, ../scss/style.scss */
+      /* line 572, ../scss/style.scss */
       #tipBox .popupTip .dollar input {
         height: 40px;
         width: 150px;
         margin-left: 20px;
         font-size: 20px;
         font-weight: bold; }
-      /* line 574, ../scss/style.scss */
+      /* line 579, ../scss/style.scss */
       #tipBox .popupTip .dollar .addBtn {
         margin-left: 30px;
         background-color: #ad974f;
@@ -838,10 +843,10 @@ body {
         font-weight: bold;
         text-align: center; }
 
-/* line 594, ../scss/style.scss */
+/* line 599, ../scss/style.scss */
 .item {
   position: relative; }
-  /* line 596, ../scss/style.scss */
+  /* line 601, ../scss/style.scss */
   .item .popup {
     display: none;
     position: absolute;
@@ -849,83 +854,83 @@ body {
     height: 100%;
     width: 100%;
     bottom: 0; }
-    /* line 603, ../scss/style.scss */
+    /* line 608, ../scss/style.scss */
     .item .popup i {
       color: #ad974f; }
     @media screen and (min-width: 710px) {
-      /* line 596, ../scss/style.scss */
+      /* line 601, ../scss/style.scss */
       .item .popup {
         display: none !important; } }
-  /* line 610, ../scss/style.scss */
+  /* line 615, ../scss/style.scss */
   .item .weird {
     height: 60%; }
 
 @media screen and (min-width: 710px) {
-  /* line 622, ../scss/style.scss */
+  /* line 627, ../scss/style.scss */
   body {
     background-image: url("../img/bg.jpg"); }
 
-  /* line 626, ../scss/style.scss */
+  /* line 631, ../scss/style.scss */
   .landing {
     max-width: 700px;
     margin: 0 auto;
     height: 100%;
     display: flex;
     align-items: center; }
-    /* line 632, ../scss/style.scss */
+    /* line 637, ../scss/style.scss */
     .landing .center {
       width: 80%;
       margin: auto; }
-    /* line 636, ../scss/style.scss */
+    /* line 641, ../scss/style.scss */
     .landing .logo {
       height: auto;
       padding: 0; }
-      /* line 639, ../scss/style.scss */
+      /* line 644, ../scss/style.scss */
       .landing .logo h1 {
         display: none; }
-      /* line 642, ../scss/style.scss */
+      /* line 647, ../scss/style.scss */
       .landing .logo img {
         display: block; }
-    /* line 647, ../scss/style.scss */
+    /* line 652, ../scss/style.scss */
     .landing .icons {
       padding-left: 5px; }
-      /* line 649, ../scss/style.scss */
+      /* line 654, ../scss/style.scss */
       .landing .icons .col {
         padding: 5px; }
-        /* line 653, ../scss/style.scss */
+        /* line 658, ../scss/style.scss */
         .landing .icons .col .section {
           border-radius: 10px; }
-          /* line 655, ../scss/style.scss */
+          /* line 660, ../scss/style.scss */
           .landing .icons .col .section i {
             font-size: 100px;
             color: #eaeaea; }
-    /* line 663, ../scss/style.scss */
+    /* line 668, ../scss/style.scss */
     .landing .section:after {
       content: "";
       display: block;
       padding-bottom: 100%; }
-    /* line 668, ../scss/style.scss */
+    /* line 673, ../scss/style.scss */
     .landing .section {
       height: auto;
       width: 100%;
       background-image: none !important;
       background-color: #ad974f;
       justify-content: center; }
-      /* line 674, ../scss/style.scss */
+      /* line 679, ../scss/style.scss */
       .landing .section h3 {
         display: none; }
-      /* line 677, ../scss/style.scss */
+      /* line 682, ../scss/style.scss */
       .landing .section i {
         display: block; }
-    /* line 682, ../scss/style.scss */
+    /* line 687, ../scss/style.scss */
     .landing .tagLine {
       display: none; }
 
-  /* line 687, ../scss/style.scss */
+  /* line 692, ../scss/style.scss */
   .header {
     display: none; }
 
-  /* line 692, ../scss/style.scss */
+  /* line 697, ../scss/style.scss */
   .hamburgerList {
     width: 100px;
     height: 100%;
@@ -933,43 +938,43 @@ body {
     display: block;
     content: '';
     clear: both; }
-    /* line 697, ../scss/style.scss */
+    /* line 702, ../scss/style.scss */
     .hamburgerList ul {
       height: 100%; }
-      /* line 699, ../scss/style.scss */
+      /* line 704, ../scss/style.scss */
       .hamburgerList ul li {
         background-color: #231f20;
         height: 16.6666666667%;
         list-style: none; }
-        /* line 704, ../scss/style.scss */
+        /* line 709, ../scss/style.scss */
         .hamburgerList ul li a i {
           display: block;
           color: #eaeaea;
           font-size: 65px;
           text-align: center;
           padding-top: 50px; }
-    /* line 714, ../scss/style.scss */
+    /* line 719, ../scss/style.scss */
     .hamburgerList .textNavList {
       display: none; }
 
-  /* line 718, ../scss/style.scss */
+  /* line 723, ../scss/style.scss */
   .menuNav {
     top: 0;
     margin-left: 100px; }
 
-  /* line 722, ../scss/style.scss */
+  /* line 727, ../scss/style.scss */
   .notice {
     width: 75%;
     left: 100px;
     top: 40px; }
 
-  /* line 728, ../scss/style.scss */
+  /* line 733, ../scss/style.scss */
   .footer {
     width: 75%;
     margin-left: 100px;
     height: 40px; }
 
-  /* line 734, ../scss/style.scss */
+  /* line 739, ../scss/style.scss */
   .billBar {
     width: 100px;
     display: block;
@@ -979,83 +984,94 @@ body {
     right: 0;
     top: 0;
     z-index: 4; }
-    /* line 743, ../scss/style.scss */
+    /* line 748, ../scss/style.scss */
     .billBar a {
       text-decoration-line: none; }
-      /* line 745, ../scss/style.scss */
+      /* line 750, ../scss/style.scss */
       .billBar a h2, .billBar a i {
         color: #eaeaea;
         width: 100vh;
         transform-origin: left;
         margin-top: -50%; }
-      /* line 752, ../scss/style.scss */
+      /* line 757, ../scss/style.scss */
       .billBar a h2 {
         font-family: cursive;
         font-size: 30px;
         transform: translate(50px, 45vh) rotate(90deg); }
-      /* line 757, ../scss/style.scss */
+      /* line 762, ../scss/style.scss */
       .billBar a i {
         font-size: 50px;
         transform: translate(50px, 35vh) rotate(90deg); }
 
-  /* line 766, ../scss/style.scss */
+  /* line 771, ../scss/style.scss */
   .pageContainer {
     margin-top: 50px;
     margin-left: 100px;
     height: 100vh;
     max-width: 75%; }
-    /* line 771, ../scss/style.scss */
+    /* line 776, ../scss/style.scss */
     .pageContainer h3 {
       font-size: 25px; }
-    /* line 774, ../scss/style.scss */
+    /* line 779, ../scss/style.scss */
     .pageContainer i {
       display: inline;
       font-size: 25px;
       color: #ad974f;
       float: right;
       padding: 0 5px; }
-    /* line 782, ../scss/style.scss */
+    /* line 787, ../scss/style.scss */
     .pageContainer .menuInfo .selection {
       display: block; }
 
-  /* line 789, ../scss/style.scss */
+  /* line 794, ../scss/style.scss */
   .billContainer {
+    overflow-y: scroll;
     margin-left: 100px;
     height: 100vh;
     max-width: 75%;
     padding: 0 40px; }
-    /* line 794, ../scss/style.scss */
+    /* line 800, ../scss/style.scss */
     .billContainer .logoText {
       display: block;
       padding-top: 100px;
       color: #231f20; }
-    /* line 801, ../scss/style.scss */
+    /* line 807, ../scss/style.scss */
     .billContainer .billBox .itemLine p {
       font-size: 25px;
       font-weight: 300; }
 
-  /* line 814, ../scss/style.scss */
+  /* line 815, ../scss/style.scss */
   #tipBox {
-    top: 420px; }
+    top: 400px; }
 
   /* line 818, ../scss/style.scss */
+  #payWay {
+    top: 400px;
+    left: 45%; }
+
+  /* line 823, ../scss/style.scss */
   .callWaiter {
     display: none; } }
 @media screen and (min-width: 1000px) {
-  /* line 825, ../scss/style.scss */
+  /* line 830, ../scss/style.scss */
   .landing {
     max-width: 930px; }
 
-  /* line 828, ../scss/style.scss */
+  /* line 833, ../scss/style.scss */
   .menuNav, .footer, .pageContainer {
     margin-left: 120px; }
 
-  /* line 831, ../scss/style.scss */
+  /* line 836, ../scss/style.scss */
   .notice {
     left: 120px; }
 
-  /* line 839, ../scss/style.scss */
+  /* line 844, ../scss/style.scss */
   .hamburgerList ul li a i {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+
+  /* line 852, ../scss/style.scss */
+  #payWay {
+    top: 400px;
+    left: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

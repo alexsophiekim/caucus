@@ -7,16 +7,9 @@ $('#menuIcon').click(function(){
 $(".item").click(function(){
   $(this).find(">:first-child").toggle();
 });
-//
-// $('body').click(function(e) {
-//   if ($(e.target).closest('.popup').length === 0) {
-//     $("#payWay").hide();
-//   }
-// });
 
 $("#tip").click(function(){
   $("#tipBox").toggle();
-
 });
 
 $(".addBtn").click(function(){
