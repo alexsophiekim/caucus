@@ -1,5 +1,4 @@
 
-console.log("hi")
 $('#menuIcon').click(function(){
   $('.hamburgerList'). toggle();
 });

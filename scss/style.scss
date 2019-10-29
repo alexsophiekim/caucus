@@ -6,6 +6,7 @@
 
 @import 'variable';
 @import 'grid';
+@import 'cafe';
 
 body{
   font-family: 'Montserrat', sans-serif;
@@ -591,11 +592,6 @@ body{
   }
 }
 
-
-
-
-
-
 .item{
   position: relative;
   .popup {
@@ -617,10 +613,6 @@ body{
   }
 
 }
-
-
-
-
 
 //////////////////////////////////   /Narrow Tablet Version/  //////////////////
 @media screen and (min-width: $mdWidth){

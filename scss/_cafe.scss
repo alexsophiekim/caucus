@@ -1,0 +1,30 @@
+.cafeContainer{
+    background-color: $whiteColour;
+    padding: 10px;
+    height: 100vh;
+    width: 75vw;
+    margin-left: 120px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    width: calc(200px - 30px);
+    height: calc(200px - 30px);
+    background: #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    h1{
+        color: $whiteColour;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
