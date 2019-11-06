@@ -714,7 +714,7 @@ body{
 }
 .menuNav{
   top:0;
-  margin-left: 100px;
+  margin-left: 92px;
 }
 .notice{
   width: 75%;
@@ -724,7 +724,7 @@ body{
 
   .footer{
     width: 75%;
-    margin-left: 100px;
+    margin-left: 92px;
     height: 40px;
   }
 
@@ -762,7 +762,7 @@ body{
 
 .pageContainer{
   margin-top: 50px;
-  margin-left: 100px;
+  margin-left: 92px;
   height: 100vh;
   max-width: 75%;
   h3{
@@ -776,6 +776,7 @@ body{
     padding:0 5px;
   }
   .menuInfo{
+    padding-left: 20px;
     .selection{
       display: block;
     }
@@ -823,10 +824,10 @@ body{
     max-width: 930px;
   }
   .menuNav, .footer, .pageContainer{
-    margin-left: 120px;
+    transform: translate(4%);
   }
   .notice{
-    left: 120px;
+    left: 135px;
   }
 
   .hamburgerList{
